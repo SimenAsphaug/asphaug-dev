@@ -21,7 +21,7 @@ export default function AboutPage() {
             My background also includes work with radio communication systems, secure networking, and mission-critical deployments — from on-prem in a desert to the cloud.
           </p>
           <p className="text-slate-400 leading-relaxed">
-            When I&apos;m not working, I&apos;m busy tinkering on quirky side projects, leveling up in games, and tearing down the highway on my motorcycle — powered by Red Bull, snus, and a dash of delightful chaos.
+            When I&apos;m not working, I&apos;m busy tinkering on quirky side projects, leveling up in games, and tearing down the highway on my motorcycle — all powered by Red Bull, snus, and a dash of delightful chaos.
           </p>
         </section>
       </main>
