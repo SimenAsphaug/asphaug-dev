@@ -1,0 +1,52 @@
+[
+    {
+      "title": "Senior Cloud Engineer",
+      "company": "Sopra Steria",
+      "duration": "2023 – Present",
+      "location": "Oslo, Norway",
+      "tags": ["AWS", "Cloud Architecture", "DevOps", "Security"]
+    },
+    {
+      "title": "Junior Solution Architect",
+      "company": "Izy",
+      "duration": "2023",
+      "location": "Tønsberg, Norway - Remote",
+      "tags": ["AWS", "Microservices", "Postman", "Lucidchart"]
+    },
+    {
+      "title": "Technical Product Manager",
+      "company": "Izy",
+      "duration": "2022 – 2023",
+      "location": "Oslo, Norway",
+      "tags": ["Grafana", "Redshift", "Lambda", "API Design", "JWT"]
+    },
+    {
+      "title": "Communications Officer / S-6",
+      "company": "Royal Norwegian Air Force",
+      "duration": "2020 – 2022",
+      "location": "Gardermoen + INTOPS",
+      "tags": ["Satellite Communications", "Radio", "Secure Operations", "Tactical ICT"]
+    },
+    {
+      "title": "Technician",
+      "company": "Norwegian Cyber Defence Force",
+      "duration": "2019 – 2020",
+      "location": "Rygge, Norway",
+      "tags": ["VMware", "Backup", "Windows Server", "Cybersecurity"]
+    },
+    {
+      "title": "Weapons Technician (Telecommunications)",
+      "company": "Royal Norwegian Navy",
+      "duration": "2017 – 2019",
+      "location": "Bergen, Norway",
+      "tags": ["Onboard ICT", "Sensors", "Communications", "Naval IT"]
+    },
+    {
+      "title": "Apprentice",
+      "company": "Norwegian Cyber Defence Force",
+      "duration": "2015 – 2017",
+      "location": "Oslo, Norway",
+      "tags": ["PowerShell", "SCCM", "VMware", "WSUS"]
+    }
+  ]
+  

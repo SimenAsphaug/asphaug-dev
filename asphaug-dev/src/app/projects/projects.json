@@ -1,0 +1,9 @@
+[
+    {
+      "title": "Kollektivet",
+      "description": "A modern app for shared living — track chores and stay organized with family or roommates.",
+      "tech": ["React", "Swift", "AWS", "Cognito", "DynamoDB", "Step Functions"],
+      "link": "https://kollektivet.app"
+    }
+  ]
+  

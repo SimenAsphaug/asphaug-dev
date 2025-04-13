@@ -1,0 +1,18 @@
+[
+    {
+      "href": "https://github.com/SimenAsphaug",
+      "ariaLabel": "GitHub",
+      "icon": "FaGithub"
+    },
+    {
+      "href": "https://www.linkedin.com/in/simen-asphaug-358030b0/",
+      "ariaLabel": "LinkedIn",
+      "icon": "FaLinkedin"
+    },
+    {
+      "href": "https://www.instagram.com/simenasphaug/",
+      "ariaLabel": "Instagram",
+      "icon": "FaInstagram"
+    }
+  ]
+  
