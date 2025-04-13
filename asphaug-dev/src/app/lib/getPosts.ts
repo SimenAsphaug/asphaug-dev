@@ -1,4 +1,3 @@
-// lib/getPosts.ts
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
@@ -15,29 +14,32 @@ export function getLatestPosts(limit = 5): BlogPostMeta[] {
   const postsDir = path.join(process.cwd(), 'src/app/blog/posts')
   const files = fs.readdirSync(postsDir)
 
-  const posts = files
-    .map((file) => {
-      const slug = file.replace('.md', '')
-      const fileContent = fs.readFileSync(path.join(postsDir, file), 'utf-8')
-      const { data } = matter(fileContent)
+  // Use reduce to build an array of published posts (skip drafts).
+  const posts = files.reduce((acc, file) => {
+    const slug = file.replace('.md', '')
+    const filePath = path.join(postsDir, file)
+    const fileContent = fs.readFileSync(filePath, 'utf-8')
+    const { data } = matter(fileContent)
 
-      // Determine if this post is a draft.
-      const isDraft = data.draft || (data.tags && data.tags.some((tag: string) => tag.toLowerCase() === 'draft'))
+    // Determine if this post is a draft (case-insensitive check).
+    const isDraft =
+      data.draft ||
+      (data.tags && data.tags.some((tag: string) => tag.toLowerCase() === 'draft'))
+    
+    // Skip this post if it's marked as a draft.
+    if (isDraft) return acc
 
-
-      return {
-        slug,
-        title: data.title || slug,
-        date: data.date || '',
-        summary: data.summary || '',
-        tags: data.tags || [],
-        isDraft,
-      }
+    acc.push({
+      slug,
+      title: data.title || slug,
+      date: data.date || '',
+      summary: data.summary || '',
+      tags: data.tags || [],
     })
-    // Filter out posts that are drafts.
-    .filter((post) => !post.isDraft)
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    return acc
+  }, [] as BlogPostMeta[])
 
-  // Remove the temporary isDraft property before returning.
-  return posts.slice(0, limit).map(({ isDraft, ...rest }) => rest) as BlogPostMeta[]
+  return posts
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, limit)
 }

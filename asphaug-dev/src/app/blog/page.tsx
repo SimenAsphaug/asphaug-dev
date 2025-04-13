@@ -10,7 +10,7 @@ export default async function BlogPage() {
       <section className="max-w-3xl mx-auto">
         <h1 className="text-4xl font-bold text-white mb-2">Blog</h1>
         <p className="text-slate-400 mb-12">
-          Thoughts, experiments, and things I've learned — written for the curious, the builders, and ehhh... future me.
+          Thoughts, experiments, and things I&apos;ve learned — written for the curious, the builders, and ehhh... future me.
         </p>
 
         {/* Render the posts list via the client component */}

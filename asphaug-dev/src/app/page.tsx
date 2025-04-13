@@ -7,7 +7,7 @@ import jobs from './experience/jobs.json'
 import socialLinks from './jsons/links.json'
 import certificates from './jsons/certificates.json'
 
-// Create a mapping from the string value (stored in JSON) to the actual icon component
+// Create a mapping from the string value (stored in JSON) to the actual icon component.
 const iconMap: { [key: string]: React.ReactElement } = {
   FaGithub: <FaGithub />,
   FaLinkedin: <FaLinkedin />,
@@ -15,7 +15,7 @@ const iconMap: { [key: string]: React.ReactElement } = {
 };
 
 export default async function HomePage() {
-  const posts = getLatestPosts(5)
+  const posts = getLatestPosts(5);
 
   return (
     <main className="bg-[#0e1117] text-[#d1d5db] px-6 py-20 font-sans">
@@ -57,6 +57,7 @@ export default async function HomePage() {
             width={250}
             height={250}
             className="rounded-full transition-transform duration-300 ease-out transform hover:scale-105"
+            unoptimized
           />
           <div className="flex flex-wrap gap-2 justify-center md:justify-end">
             {certificates.map((badge, idx) => (
@@ -74,6 +75,7 @@ export default async function HomePage() {
                   width={60}
                   height={60}
                   className="rounded-md"
+                  unoptimized
                 />
               </a>
             ))}
@@ -119,5 +121,5 @@ export default async function HomePage() {
         <ExperienceSection jobs={jobs} />
       </section>
     </main>
-  )
+  );
 }
