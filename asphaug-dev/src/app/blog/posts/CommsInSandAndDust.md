@@ -7,7 +7,7 @@ tags: ["Draft", "Cloud", "AWS", "Security", "DevOps", "PACE", "Resilience"]
 
 In 2021, I was stationed in Mali as part of the Norwegian contribution to the UN peacekeeping mission. My job? Keep communications up and running in a rough unpredictable environment.
 
-Scorching heat, power instability, satellite links stretched to their limits—and yet, operational uptime wasn’t optional. IT had to just work. There was no room for “we’ll fix it in the morning.”
+Scorching heat, power instability, satellite links stretched to their limits-and yet, operational uptime wasn’t optional. IT had to just work. There was no room for “we’ll fix it in the morning.”
 
 This experience taught me more about resilience, redundancy, and real-world problem solving than any certification ever could. And surprisingly, much of what I learned applies directly to modern cloud operations in platforms like AWS.
 
@@ -30,7 +30,7 @@ In Mali, we relied on multiple forms of communication: Fibre, tactical radios, s
 
 ### 🔍 2. Visibility is Survival
 
-Dust storms, extreme heat, and unpredictable weather patterns made radio communication unstable. To better understand and adapt to these challenges, we relied on **spectrum analyzers** to monitor signal strength and interference across frequencies. Formal monitoring tools were limited, so instead, we conducted **frequent manual radio checks**—sometimes every hour—to ensure operational readiness and to detect degradation early. Over time, we began to recognize patterns in how environmental conditions—especially airborne dust—affected range and clarity. This kind of hands-on, field-based "monitoring" was essential to keep the mission running.
+Dust storms, extreme heat, and unpredictable weather patterns made radio communication unstable. To better understand and adapt to these challenges, we relied on **spectrum analyzers** to monitor signal strength and interference across frequencies. Formal monitoring tools were limited, so instead, we conducted **frequent manual radio checks**-sometimes every hour-to ensure operational readiness and to detect degradation early. Over time, we began to recognize patterns in how environmental conditions-especially airborne dust-affected range and clarity. This kind of hands-on, field-based "monitoring" was essential to keep the mission running.
 
 ➡️ In cloud:
 
@@ -67,16 +67,16 @@ Manually configuring comms gear in 40°C heat? Not ideal. Wherever possible, we 
 
 ### 📡 5. Think Tactically – Design Strategically
 
-One of the most valuable frameworks I brought with me from military operations is **PACE planning**—a tactical approach to ensuring communications always stay online, no matter what. It stands for:
+One of the most valuable frameworks I brought with me from military operations is **PACE planning**-a tactical approach to ensuring communications always stay online, no matter what. It stands for:
 
 - **Primary**  
 - **Alternate**  
 - **Contingency**  
 - **Emergency**
 
-In the field, **PACE planning was second nature**. We applied it to everything from radios to satellite links—because failure wasn’t just inconvenient, it could be mission-critical. The core idea is simple but powerful: **never rely on a single method of communication**. Always plan for what happens if your primary fails… and then what happens if *that* fails too.
+In the field, **PACE planning was second nature**. We applied it to everything from radios to satellite links-because failure wasn’t just inconvenient, it could be mission-critical. The core idea is simple but powerful: **never rely on a single method of communication**. Always plan for what happens if your primary fails… and then what happens if *that* fails too.
 
-Each level in the PACE plan should be **increasingly independent** of the previous one—technologically, geographically, and operationally. That layered redundancy gave us confidence in the face of chaos. And it’s a mindset that translates perfectly to modern cloud infrastructure.
+Each level in the PACE plan should be **increasingly independent** of the previous one-technologically, geographically, and operationally. That layered redundancy gave us confidence in the face of chaos. And it’s a mindset that translates perfectly to modern cloud infrastructure.
 
 
 🪖 In the field, this might look like:
