@@ -1,11 +1,11 @@
-import { getLatestPosts } from './lib/getPosts'
-import Image from 'next/image'
-import Link from 'next/link'
-import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
-import ExperienceSection from './experience/ExperienceSection'
-import jobs from './experience/jobs.json'
-import socialLinks from './jsons/links.json'
-import certificates from './jsons/certificates.json'
+import { getLatestPosts } from "./lib/getPosts";
+import Image from "next/image";
+import Link from "next/link";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import ExperienceSection from "./experience/ExperienceSection";
+import jobs from "./experience/jobs.json";
+import socialLinks from "./jsons/links.json";
+import certificates from "./jsons/certificates.json";
 
 // Create a mapping from the string value (stored in JSON) to the actual icon component.
 const iconMap: { [key: string]: React.ReactElement } = {
@@ -29,8 +29,9 @@ export default async function HomePage() {
             Senior Partner Chief Cat Owner
           </h2>
           <p className="text-slate-400 max-w-lg">
-            From military-grade systems to cloud-native apps — I build infrastructure that performs under pressure,
-            scales with ease, and stays secure.
+            From military-grade systems to cloud-native apps — I build
+            infrastructure that performs under pressure, scales with ease, and
+            stays secure.
           </p>
           {/* Social Links */}
           <div className="flex space-x-4 text-xl text-slate-400">
@@ -97,10 +98,10 @@ export default async function HomePage() {
                 className="border-l-4 border-sky-500 pl-4 transition-transform duration-300 ease-out transform hover:translate-x-2"
               >
                 <p className="text-sm text-sky-400">
-                  {new Date(post.date).toLocaleDateString('no-NO', {
-                    day: '2-digit',
-                    month: '2-digit',
-                    year: 'numeric',
+                  {new Date(post.date).toLocaleDateString("no-NO", {
+                    day: "2-digit",
+                    month: "2-digit",
+                    year: "numeric",
                   })}
                 </p>
                 <Link
