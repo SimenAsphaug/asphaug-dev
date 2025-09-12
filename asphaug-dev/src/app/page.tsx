@@ -29,7 +29,7 @@ export default async function HomePage() {
             Senior Partner Chief Cat Owner
           </h2>
           <p className="text-slate-400 max-w-lg">
-            From military-grade systems to cloud-native apps — I build
+            From military-grade systems to cloud-native apps - I build
             infrastructure that performs under pressure, scales with ease, and
             stays secure.
           </p>

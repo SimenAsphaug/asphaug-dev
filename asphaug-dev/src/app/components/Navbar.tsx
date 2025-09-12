@@ -2,9 +2,15 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
 export default function Navbar() {
-  const pathname = usePathname();
+  const [pathname, setPathname] = useState('');
+  const currentPathname = usePathname();
+
+  useEffect(() => {
+    setPathname(currentPathname);
+  }, [currentPathname]);
 
   // Helper classes for active/inactive links.
   const activeClasses = "font-semibold text-sky-400";
