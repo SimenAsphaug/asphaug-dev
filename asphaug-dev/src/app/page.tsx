@@ -2,10 +2,10 @@ import { getLatestPosts } from "./lib/getPosts";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
-import ExperienceSection from "./experience/ExperienceSection";
 import jobs from "./experience/jobs.json";
 import socialLinks from "./jsons/links.json";
 import certificates from "./jsons/certificates.json";
+import CertificatesExperienceToggle from "./components/CertificatesExperienceToggle";
 
 // Create a mapping from the string value (stored in JSON) to the actual icon component.
 const iconMap: { [key: string]: React.ReactElement } = {
@@ -96,40 +96,7 @@ export default async function HomePage() {
           )}
         </div>
 
-        <div className="space-y-8">
-          {/* Certificates Section */}
-          <div className="space-y-4">
-            <h3 className="uppercase text-sm tracking-widest text-slate-500 font-medium">
-              Certificates
-            </h3>
-            <div className="space-y-3">
-              {certificates.map((cert, idx) => (
-                <a
-                  key={idx}
-                  href={cert.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 transition-transform duration-300 ease-out hover:translate-x-1"
-                >
-                  <Image
-                    src={cert.src}
-                    alt={cert.alt}
-                    width={40}
-                    height={40}
-                    className="rounded-md flex-shrink-0"
-                    unoptimized
-                  />
-                  <span className="text-sm text-slate-300 hover:text-sky-400 transition-colors">
-                    {cert.alt}
-                  </span>
-                </a>
-              ))}
-            </div>
-          </div>
-
-          {/* Experience Section */}
-          <ExperienceSection jobs={jobs} />
-        </div>
+        <CertificatesExperienceToggle certificates={certificates} jobs={jobs} />
       </section>
     </main>
   );
