@@ -50,8 +50,7 @@ export default async function HomePage() {
           </div>
         </div>
 
-        {/* Certificates */}
-        <div className="flex flex-col items-center md:items-end pr-4 md:pr-12 space-y-4">
+        <div className="flex flex-col items-center md:items-end pr-4 md:pr-12">
           <Image
             src="/me.jpg"
             alt="Simen Asphaug"
@@ -60,27 +59,6 @@ export default async function HomePage() {
             className="rounded-full transition-transform duration-300 ease-out transform hover:scale-105"
             unoptimized
           />
-          <div className="flex flex-wrap gap-2 justify-center md:justify-end">
-            {certificates.map((badge, idx) => (
-              <a
-                key={idx}
-                href={badge.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={badge.alt}
-                className="transition-opacity duration-300 hover:opacity-80"
-              >
-                <Image
-                  src={badge.src}
-                  alt={badge.alt}
-                  width={60}
-                  height={60}
-                  className="rounded-md"
-                  unoptimized
-                />
-              </a>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -118,8 +96,40 @@ export default async function HomePage() {
           )}
         </div>
 
-        {/* Experience Section */}
-        <ExperienceSection jobs={jobs} />
+        <div className="space-y-8">
+          {/* Certificates Section */}
+          <div className="space-y-4">
+            <h3 className="uppercase text-sm tracking-widest text-slate-500 font-medium">
+              Certificates
+            </h3>
+            <div className="space-y-3">
+              {certificates.map((cert, idx) => (
+                <a
+                  key={idx}
+                  href={cert.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 transition-transform duration-300 ease-out hover:translate-x-1"
+                >
+                  <Image
+                    src={cert.src}
+                    alt={cert.alt}
+                    width={40}
+                    height={40}
+                    className="rounded-md flex-shrink-0"
+                    unoptimized
+                  />
+                  <span className="text-sm text-slate-300 hover:text-sky-400 transition-colors">
+                    {cert.alt}
+                  </span>
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Experience Section */}
+          <ExperienceSection jobs={jobs} />
+        </div>
       </section>
     </main>
   );
