@@ -91,7 +91,7 @@ export default function CertificatesExperienceToggle({
           </div>
         ) : (
           <div className="space-y-8">
-            <div className="flex items-center justify-end">
+            <div className="flex items-center justify-start">
               <button
                 onClick={() => setShowTags((prev) => !prev)}
                 className="bg-[#1e293b] text-sky-400 text-xs px-2 py-1 rounded-md font-medium transition-colors duration-300 hover:bg-sky-500 hover:text-white"
