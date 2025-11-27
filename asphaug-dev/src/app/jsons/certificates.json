@@ -1,8 +1,8 @@
 [
   {
-    "src": "/aws-certified-cloud-practitioner.png",
-    "alt": "AWS Cloud Practitioner",
-    "href": "https://www.credly.com/badges/aad56b10-6a78-46c3-96c1-24c326aa8856"
+    "src": "/aws-certified-solutions-architect-professional.png",
+    "alt": "AWS Certified Solutions Architect Professional",
+    "href": "https://www.credly.com/badges/35f72307-0358-418f-ab74-53382297db4a"
   },
   {
     "src": "/aws-certified-solutions-architect-associate.png",
@@ -10,9 +10,24 @@
     "href": "https://www.credly.com/badges/b8552883-d806-43ca-b466-fd22243a609d"
   },
   {
+    "src": "/aws-certified-cloudops-engineer-associate.png",
+    "alt": "Aws Certified CloudOps Engineer",
+    "href": "https://www.credly.com/badges/4fdf2e13-9440-4063-b259-39af86d24008"
+  },
+  {
+    "src": "/aws-certified-developer-associate.png",
+    "alt": "AWS Certified Developer Associate",
+    "href": "https://www.credly.com/badges/797d9d2b-9efd-4701-8b34-ddcad94373b1"
+  },
+  {
     "src": "/aws-certified-sysops-administrator-associate.png",
     "alt": "AWS Certified SysOps Administrator",
     "href": "https://www.credly.com/badges/51ddfecb-f201-4af7-96ab-b23604c0bd76"
+  },
+  {
+    "src": "/aws-certified-cloud-practitioner.png",
+    "alt": "AWS Cloud Practitioner",
+    "href": "https://www.credly.com/badges/aad56b10-6a78-46c3-96c1-24c326aa8856"
   },
   {
     "src": "/hashicorp-certified-terraform-associate-003.png",
@@ -20,8 +35,13 @@
     "href": "https://www.credly.com/badges/b2bef5a6-76e7-4b10-adc3-bace2a7ad903"
   },
   {
-    "src": "/cnpa.png",
-    "alt": "CNPA",
+    "src": "/cnpa-certified-cloud-native-platform-engineering-associate.png",
+    "alt": "CNPA: Certified Cloud Native Platform Engineering Associate",
     "href": "https://www.credly.com/badges/5998d52e-131b-48a3-b728-b6327454d4d1"
+  },
+  {
+    "src": "/well-architected-proficient.png",
+    "alt": "Well-Architected Proficient",
+    "href": "https://www.credly.com/badges/b4c36a5a-d280-40bd-90e5-482f4594fde7"
   }
 ]
